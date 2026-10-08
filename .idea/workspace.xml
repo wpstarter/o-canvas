@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AIDiffSettings">
+    <option name="showAIDiff" value="false" />
+  </component>
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="9724cf09-9c56-47f6-bb46-cf4b27cd2189" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
+    <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
+    <execution>
+      <executable />
+    </execution>
+  </component>
+  <component name="EmbeddingIndexingInfo">
+    <option name="cachedIndexableFilesCount" value="166" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="McpProjectServerCommands">
+    <commands />
+    <urls />
+  </component>
+  <component name="NextEditCompletionFeaturesState">
+    <decayedCancelled>
+      <entry key="MS100" value="1.0000000000081293" />
+      <entry key="MS500" value="1.0060535619714512" />
+      <entry key="S2" value="1.2821635879225945" />
+      <entry key="S5" value="1.7890424275254593" />
+      <entry key="S10" value="2.608719799241779" />
+      <entry key="S30" value="4.511077195470019" />
+      <entry key="S60" value="5.523969797463063" />
+      <entry key="M2" value="6.190302185996081" />
+      <entry key="M5" value="6.656719981697996" />
+      <entry key="M10" value="6.82492147781182" />
+      <entry key="M15" value="6.882500818613448" />
+      <entry key="M30" value="6.940856225341556" />
+      <entry key="H1" value="6.970328789431914" />
+      <entry key="H2" value="6.985139466010266" />
+      <entry key="H4" value="6.992563488545141" />
+      <entry key="D1" value="6.998759713093321" />
+      <entry key="W1" value="6.999822794877304" />
+    </decayedCancelled>
+    <decayedSelected>
+      <entry key="MS100" value="1.1862734611858186E-133" />
+      <entry key="MS500" value="2.5991836289785816E-27" />
+      <entry key="S2" value="2.2579235888525355E-7" />
+      <entry key="S5" value="0.0021952485364867343" />
+      <entry key="S10" value="0.04685347944909466" />
+      <entry key="S30" value="0.3605072054543458" />
+      <entry key="S60" value="0.6004225224409437" />
+      <entry key="M2" value="0.7748693583056074" />
+      <entry key="M5" value="0.9030075780606532" />
+      <entry key="M10" value="0.9502671087966016" />
+      <entry key="M15" value="0.9665636646446008" />
+      <entry key="M30" value="0.9831396974207686" />
+      <entry key="H1" value="0.9915340122359743" />
+      <entry key="H2" value="0.9957580088736289" />
+      <entry key="H4" value="0.99787675034226" />
+      <entry key="D1" value="0.9996458115815237" />
+      <entry key="W1" value="0.9999493939722413" />
+    </decayedSelected>
+    <decayedShown>
+      <entry key="MS100" value="0.0061721977490066075" />
+      <entry key="MS500" value="0.36384798201287416" />
+      <entry key="S2" value="0.9989674563075612" />
+      <entry key="S5" value="1.6275031133014652" />
+      <entry key="S10" value="2.497720445053589" />
+      <entry key="S30" value="4.689741348573309" />
+      <entry key="S60" value="5.986766728757648" />
+      <entry key="M2" value="6.879574453327839" />
+      <entry key="M5" value="7.52058070328839" />
+      <entry key="M10" value="7.754711902211251" />
+      <entry key="M15" value="7.835205842223987" />
+      <entry key="M30" value="7.91696109560633" />
+      <entry key="H1" value="7.958318679056872" />
+      <entry key="H2" value="7.979118694357231" />
+      <entry key="H4" value="7.98954916354719" />
+      <entry key="D1" value="7.998256777631029" />
+      <entry key="W1" value="7.999750933523457" />
+    </decayedShown>
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP" />
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 1,
+  "fromUser": false
+}]]></component>
+  <component name="ProjectId" id="3KOtNwCmDYBZxhEqqTBzIPZzErI" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.MCP Project settings loaded": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.laravel_idea.move_run_console_settings": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "codeWithMe.voiceChat.enabledByDefault": "false",
+    "git-widget-placeholder": "10.x",
+    "last_opened_file_path": "D:/wpstarter/packages/o-canvas-2.x",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm"
+  }
+}]]></component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-d6986cc7102b-4abd2a77f808-JavaScript-PS-262.10968.76" />
+        <option value="bundled-php-predefined-a98d8de5180a-9522f28f0b20-com.jetbrains.php.sharedIndexes-PS-262.10968.76" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="9724cf09-9c56-47f6-bb46-cf4b27cd2189" name="Changes" comment="" />
+      <created>1791440406154</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1791440406154</updated>
+      <workItem from="1791440407505" duration="1575000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

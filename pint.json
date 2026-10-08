@@ -1,0 +1,12 @@
+{
+    "preset": "laravel",
+    "rules": {
+        "fully_qualified_strict_types": false,
+        "native_function_invocation": {
+            "include": ["@compiler_optimized"],
+            "scope": "namespaced",
+            "strict": true
+        },
+        "php_unit_method_casing": false
+    }
+}

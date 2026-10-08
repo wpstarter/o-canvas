@@ -1,0 +1,11 @@
+# Composer
+composer.lock
+vendor/*
+
+# Subsplit
+/.subsplit/
+
+# PHPUnit
+/coverage/*
+/.phpunit.cache/*
+/.phpunit.result.cache

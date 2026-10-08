@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phpunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="https://schema.phpunit.de/11.5/phpunit.xsd"
+         backupGlobals="false"
+         bootstrap="vendor/autoload.php"
+         colors="true"
+         processIsolation="false"
+         stopOnFailure="false"
+         cacheDirectory=".phpunit.cache"
+         backupStaticProperties="false">
+    <coverage />
+    <testsuites>
+        <testsuite name="Canvas Test Suite">
+            <directory suffix="Test.php">tests/Feature/</directory>
+            <directory suffix="Test.php">tests/Unit/</directory>
+            <directory suffix="Test.php">workbench/tests/</directory>
+        </testsuite>
+    </testsuites>
+    <php>
+        <ini name="memory_limit" value="256M"/>
+        <env name="CANVAS_FOR_LARAVEL" value="(true)"/>
+    </php>
+    <source>
+        <include>
+            <directory suffix=".php">src/</directory>
+        </include>
+        <exclude>
+            <file>src/Console/PresetMakeCommand.php</file>
+        </exclude>
+    </source>
+</phpunit>
