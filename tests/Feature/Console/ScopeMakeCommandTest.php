@@ -20,7 +20,7 @@ class ScopeMakeCommandTest extends TestCase
         $this->assertFileContains([
             'namespace App\Models\Scopes;',
             'use WpStarter\Database\Eloquent\Builder;',
-            'use WpStarter\Database\Eloquent\Model;',
+            'use WpStarter\Database\Eloquent\Contracts\Model;',
             'use WpStarter\Database\Eloquent\Scope;',
             'class FooScope implements Scope',
         ], 'app/Models/Scopes/FooScope.php');

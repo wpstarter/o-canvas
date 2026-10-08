@@ -87,7 +87,7 @@ class TestMakeCommand extends \WpStarter\Foundation\Console\TestMakeCommand
             "use {$namespaceTestCase};\nuse {$namespaceTestCase};", "use {$namespaceTestCase};", $stub
         );
 
-        $testCase = class_basename(trim($testCase, '\\'));
+        $testCase = ws_class_basename(trim($testCase, '\\'));
 
         return str_replace('DummyTestCase', $testCase, $stub);
     }

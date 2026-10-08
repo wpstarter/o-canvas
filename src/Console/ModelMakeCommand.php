@@ -105,7 +105,7 @@ class ModelMakeCommand extends \WpStarter\Foundation\Console\ModelMakeCommand
     #[\Override]
     protected function createMigration()
     {
-        $table = Str::snake(Str::pluralStudly(class_basename($this->getNameInput())));
+        $table = Str::snake(Str::pluralStudly(ws_class_basename($this->getNameInput())));
 
         if ($this->option('pivot')) {
             $table = Str::singular($table);
@@ -127,7 +127,7 @@ class ModelMakeCommand extends \WpStarter\Foundation\Console\ModelMakeCommand
     #[\Override]
     protected function createSeeder()
     {
-        $seeder = Str::studly(class_basename($this->getNameInput()));
+        $seeder = Str::studly(ws_class_basename($this->getNameInput()));
 
         $this->call('make:seeder', [
             'name' => "{$seeder}Seeder",
@@ -143,7 +143,7 @@ class ModelMakeCommand extends \WpStarter\Foundation\Console\ModelMakeCommand
     #[\Override]
     protected function createController()
     {
-        $controller = Str::studly(class_basename($this->getNameInput()));
+        $controller = Str::studly(ws_class_basename($this->getNameInput()));
 
         $modelName = $this->qualifyClass($this->getNameInput());
 
@@ -164,7 +164,7 @@ class ModelMakeCommand extends \WpStarter\Foundation\Console\ModelMakeCommand
     #[\Override]
     protected function createPolicy()
     {
-        $policy = Str::studly(class_basename($this->getNameInput()));
+        $policy = Str::studly(ws_class_basename($this->getNameInput()));
 
         $this->call('make:policy', [
             'name' => "{$policy}Policy",

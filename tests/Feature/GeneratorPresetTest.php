@@ -18,7 +18,7 @@ class GeneratorPresetTest extends TestCase
     #[Test]
     public function it_can_be_resolved_and_has_correct_signature_as_laravel_preset()
     {
-        $workingPath = realpath(join_paths(__DIR__, '..', '..', 'vendor', 'orchestra', 'testbench-core', 'laravel'));
+        $workingPath = static::applicationBasePath();
 
         $preset = $this->app[PresetManager::class]->driver('canvas');
 

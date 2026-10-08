@@ -89,7 +89,7 @@ class ViewMakeCommand extends \WpStarter\Foundation\Console\ViewMakeCommand
     {
         /** @var string $extension */
         /** @phpstan-ignore argument.type */
-        $extension = transform($this->option('extension'), fn (string $extension) => trim($extension));
+        $extension = ws_transform($this->option('extension'), fn (string $extension) => trim($extension));
 
         return $this->viewPath(
             $this->getNameInput().'.'.$extension,
@@ -117,7 +117,7 @@ class ViewMakeCommand extends \WpStarter\Foundation\Console\ViewMakeCommand
     protected function getNameInput()
     {
         /** @phpstan-ignore argument.type, return.type */
-        return transform($this->argument('name'), function (string $name) {
+        return ws_transform($this->argument('name'), function (string $name) {
             return str_replace(['\\', '.'], '/', trim($name));
         });
     }
@@ -154,7 +154,7 @@ class ViewMakeCommand extends \WpStarter\Foundation\Console\ViewMakeCommand
 
         $contents = str_replace(
             ['{{ namespace }}', '{{ class }}', '{{ name }}', 'DummyTestCase'],
-            [$this->testNamespace(), $this->testClassName(), $this->testViewName(), class_basename(trim($testCase, '\\'))],
+            [$this->testNamespace(), $this->testClassName(), $this->testViewName(), ws_class_basename(trim($testCase, '\\'))],
             $stub,
         );
 

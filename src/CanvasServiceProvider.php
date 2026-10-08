@@ -39,7 +39,7 @@ class CanvasServiceProvider extends ServiceProvider implements DeferrableProvide
                     'feature' => 'Tests\TestCase',
                 ]);
 
-                $config['namespace'] = rescue(fn () => rtrim($app->getNamespace(), '\\'), null, false);
+                $config['namespace'] = ws_rescue(fn () => rtrim($app->getNamespace(), '\\'), null, false);
             }
 
             return Canvas::preset($config, $workingPath);
