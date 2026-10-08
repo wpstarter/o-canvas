@@ -10,7 +10,7 @@ use Symfony\Component\Console\Attribute\AsCommand;
  * @see https://github.com/laravel/framework/blob/11.x/src/Illuminate/Foundation/Console/ResourceMakeCommand.php
  */
 #[AsCommand(name: 'make:resource', description: 'Create a new resource')]
-class ResourceMakeCommand extends \Illuminate\Foundation\Console\ResourceMakeCommand
+class ResourceMakeCommand extends \WpStarter\Foundation\Console\ResourceMakeCommand
 {
     use CodeGenerator;
     use UsesGeneratorOverrides;
@@ -33,7 +33,7 @@ class ResourceMakeCommand extends \Illuminate\Foundation\Console\ResourceMakeCom
      *
      * @return bool|null
      *
-     * @throws \Illuminate\Contracts\Filesystem\FileNotFoundException
+     * @throws \WpStarter\Contracts\Filesystem\FileNotFoundException
      */
     #[\Override]
     public function handle()

@@ -11,7 +11,7 @@ use Symfony\Component\Console\Attribute\AsCommand;
  * @see https://github.com/laravel/framework/blob/11.x/src/Illuminate/Foundation/Console/ComponentMakeCommand.php
  */
 #[AsCommand(name: 'make:component', description: 'Create a new view component class')]
-class ComponentMakeCommand extends \Illuminate\Foundation\Console\ComponentMakeCommand
+class ComponentMakeCommand extends \WpStarter\Foundation\Console\ComponentMakeCommand
 {
     use CodeGenerator;
     use TestGenerator;
@@ -35,7 +35,7 @@ class ComponentMakeCommand extends \Illuminate\Foundation\Console\ComponentMakeC
      *
      * @return bool|null
      *
-     * @throws \Illuminate\Contracts\Filesystem\FileNotFoundException
+     * @throws \WpStarter\Contracts\Filesystem\FileNotFoundException
      */
     #[\Override]
     public function handle()

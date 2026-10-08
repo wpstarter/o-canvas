@@ -11,7 +11,7 @@ use Symfony\Component\Console\Attribute\AsCommand;
  * @see https://github.com/laravel/framework/blob/11.x/src/Illuminate/Foundation/Console/NotificationMakeCommand.php
  */
 #[AsCommand(name: 'make:notification', description: 'Create a new notification class')]
-class NotificationMakeCommand extends \Illuminate\Foundation\Console\NotificationMakeCommand
+class NotificationMakeCommand extends \WpStarter\Foundation\Console\NotificationMakeCommand
 {
     use CodeGenerator;
     use TestGenerator;
@@ -35,7 +35,7 @@ class NotificationMakeCommand extends \Illuminate\Foundation\Console\Notificatio
      *
      * @return bool|null
      *
-     * @throws \Illuminate\Contracts\Filesystem\FileNotFoundException
+     * @throws \WpStarter\Contracts\Filesystem\FileNotFoundException
      */
     #[\Override]
     public function handle()

@@ -10,7 +10,7 @@ use Symfony\Component\Console\Attribute\AsCommand;
  * @see https://github.com/laravel/framework/blob/11.x/src/Illuminate/Foundation/Console/RuleMakeCommand.php
  */
 #[AsCommand(name: 'make:rule', description: 'Create a new validation rule')]
-class RuleMakeCommand extends \Illuminate\Foundation\Console\RuleMakeCommand
+class RuleMakeCommand extends \WpStarter\Foundation\Console\RuleMakeCommand
 {
     use CodeGenerator;
     use UsesGeneratorOverrides;
@@ -33,7 +33,7 @@ class RuleMakeCommand extends \Illuminate\Foundation\Console\RuleMakeCommand
      *
      * @return bool|null
      *
-     * @throws \Illuminate\Contracts\Filesystem\FileNotFoundException
+     * @throws \WpStarter\Contracts\Filesystem\FileNotFoundException
      */
     #[\Override]
     public function handle()

@@ -2,7 +2,7 @@
 
 namespace Orchestra\Canvas\Console;
 
-use Illuminate\Support\Str;
+use WpStarter\Support\Str;
 use Orchestra\Canvas\Core\Concerns\CodeGenerator;
 use Orchestra\Canvas\Core\Concerns\TestGenerator;
 use Orchestra\Canvas\Core\Concerns\UsesGeneratorOverrides;
@@ -12,7 +12,7 @@ use Symfony\Component\Console\Attribute\AsCommand;
 use function Orchestra\Sidekick\Filesystem\join_paths;
 
 #[AsCommand(name: 'make:view', description: 'Create a new view')]
-class ViewMakeCommand extends \Illuminate\Foundation\Console\ViewMakeCommand
+class ViewMakeCommand extends \WpStarter\Foundation\Console\ViewMakeCommand
 {
     use CodeGenerator;
     use TestGenerator {
@@ -38,7 +38,7 @@ class ViewMakeCommand extends \Illuminate\Foundation\Console\ViewMakeCommand
      *
      * @return bool|null
      *
-     * @throws \Illuminate\Contracts\Filesystem\FileNotFoundException
+     * @throws \WpStarter\Contracts\Filesystem\FileNotFoundException
      */
     #[\Override]
     public function handle()

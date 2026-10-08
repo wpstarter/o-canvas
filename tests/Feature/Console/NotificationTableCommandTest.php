@@ -15,7 +15,7 @@ class NotificationTableCommandTest extends TestCase
             ->assertSuccessful();
 
         $this->assertMigrationFileContains([
-            'use Illuminate\Database\Migrations\Migration;',
+            'use WpStarter\Database\Migrations\Migration;',
             'return new class extends Migration',
             'Schema::create(\'notifications\', function (Blueprint $table) {',
         ], 'create_notifications_table.php');

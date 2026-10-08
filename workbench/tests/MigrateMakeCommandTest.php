@@ -1,6 +1,6 @@
 <?php
 
-namespace Illuminate\Tests\Integration\Generators;
+namespace WpStarter\Tests\Integration\Generators;
 
 class MigrateMakeCommandTest extends TestCase
 {
@@ -10,7 +10,7 @@ class MigrateMakeCommandTest extends TestCase
             ->assertExitCode(0);
 
         $this->assertMigrationFileContains([
-            'use Illuminate\Database\Migrations\Migration;',
+            'use WpStarter\Database\Migrations\Migration;',
             'return new class extends Migration',
             'Schema::table(\'foos\', function (Blueprint $table) {',
         ], 'add_bar_to_foos_table.php');
@@ -22,7 +22,7 @@ class MigrateMakeCommandTest extends TestCase
             ->assertExitCode(0);
 
         $this->assertMigrationFileContains([
-            'use Illuminate\Database\Migrations\Migration;',
+            'use WpStarter\Database\Migrations\Migration;',
             'return new class extends Migration',
             'Schema::table(\'foobar\', function (Blueprint $table) {',
         ], 'add_bar_to_foos_table.php');
@@ -34,7 +34,7 @@ class MigrateMakeCommandTest extends TestCase
             ->assertExitCode(0);
 
         $this->assertMigrationFileContains([
-            'use Illuminate\Database\Migrations\Migration;',
+            'use WpStarter\Database\Migrations\Migration;',
             'return new class extends Migration',
             'Schema::create(\'foos\', function (Blueprint $table) {',
             'Schema::dropIfExists(\'foos\');',
@@ -47,7 +47,7 @@ class MigrateMakeCommandTest extends TestCase
             ->assertExitCode(0);
 
         $this->assertMigrationFileContains([
-            'use Illuminate\Database\Migrations\Migration;',
+            'use WpStarter\Database\Migrations\Migration;',
             'return new class extends Migration',
             'Schema::create(\'foobar\', function (Blueprint $table) {',
             'Schema::dropIfExists(\'foobar\');',

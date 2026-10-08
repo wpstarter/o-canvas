@@ -1,6 +1,6 @@
 <?php
 
-namespace Illuminate\Tests\Integration\Generators;
+namespace WpStarter\Tests\Integration\Generators;
 
 class RequestMakeCommandTest extends TestCase
 {
@@ -15,7 +15,7 @@ class RequestMakeCommandTest extends TestCase
 
         $this->assertFileContains([
             'namespace App\Http\Requests;',
-            'use Illuminate\Foundation\Http\FormRequest;',
+            'use WpStarter\Foundation\Http\FormRequest;',
             'class FooRequest extends FormRequest',
         ], 'app/Http/Requests/FooRequest.php');
     }

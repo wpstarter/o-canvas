@@ -19,9 +19,9 @@ class ScopeMakeCommandTest extends TestCase
 
         $this->assertFileContains([
             'namespace App\Models\Scopes;',
-            'use Illuminate\Database\Eloquent\Builder;',
-            'use Illuminate\Database\Eloquent\Model;',
-            'use Illuminate\Database\Eloquent\Scope;',
+            'use WpStarter\Database\Eloquent\Builder;',
+            'use WpStarter\Database\Eloquent\Model;',
+            'use WpStarter\Database\Eloquent\Scope;',
             'class FooScope implements Scope',
         ], 'app/Models/Scopes/FooScope.php');
     }

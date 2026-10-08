@@ -10,7 +10,7 @@ use Symfony\Component\Console\Attribute\AsCommand;
  * @see https://github.com/laravel/framework/blob/11.x/src/Illuminate/Database/Console/Seeds/SeederMakeCommand.php
  */
 #[AsCommand(name: 'make:seeder', description: 'Create a new seeder class')]
-class SeederMakeCommand extends \Illuminate\Database\Console\Seeds\SeederMakeCommand
+class SeederMakeCommand extends \WpStarter\Database\Console\Seeds\SeederMakeCommand
 {
     use CodeGenerator;
     use UsesGeneratorOverrides;
@@ -33,7 +33,7 @@ class SeederMakeCommand extends \Illuminate\Database\Console\Seeds\SeederMakeCom
      *
      * @return bool|null
      *
-     * @throws \Illuminate\Contracts\Filesystem\FileNotFoundException
+     * @throws \WpStarter\Contracts\Filesystem\FileNotFoundException
      */
     #[\Override]
     public function handle()

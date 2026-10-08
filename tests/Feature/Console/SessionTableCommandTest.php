@@ -15,7 +15,7 @@ class SessionTableCommandTest extends TestCase
             ->assertSuccessful();
 
         $this->assertMigrationFileContains([
-            'use Illuminate\Database\Migrations\Migration;',
+            'use WpStarter\Database\Migrations\Migration;',
             'return new class extends Migration',
             'Schema::create(\'sessions\', function (Blueprint $table) {',
         ], 'create_sessions_table.php');

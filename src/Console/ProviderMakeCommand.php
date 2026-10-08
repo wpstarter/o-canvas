@@ -10,7 +10,7 @@ use Symfony\Component\Console\Attribute\AsCommand;
  * @see https://github.com/laravel/framework/blob/11.x/src/Illuminate/Foundation/Console/ProviderMakeCommand.php
  */
 #[AsCommand(name: 'make:provider', description: 'Create a new service provider class')]
-class ProviderMakeCommand extends \Illuminate\Foundation\Console\ProviderMakeCommand
+class ProviderMakeCommand extends \WpStarter\Foundation\Console\ProviderMakeCommand
 {
     use CodeGenerator;
     use UsesGeneratorOverrides;
@@ -33,7 +33,7 @@ class ProviderMakeCommand extends \Illuminate\Foundation\Console\ProviderMakeCom
      *
      * @return bool|null
      *
-     * @throws \Illuminate\Contracts\Filesystem\FileNotFoundException
+     * @throws \WpStarter\Contracts\Filesystem\FileNotFoundException
      */
     #[\Override]
     public function handle()

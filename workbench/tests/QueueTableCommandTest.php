@@ -1,8 +1,8 @@
 <?php
 
-namespace Illuminate\Tests\Integration\Generators;
+namespace WpStarter\Tests\Integration\Generators;
 
-use Illuminate\Queue\Console\TableCommand;
+use WpStarter\Queue\Console\TableCommand;
 
 class QueueTableCommandTest extends TestCase
 {
@@ -11,7 +11,7 @@ class QueueTableCommandTest extends TestCase
         $this->artisan(TableCommand::class)->assertExitCode(0);
 
         $this->assertMigrationFileContains([
-            'use Illuminate\Database\Migrations\Migration;',
+            'use WpStarter\Database\Migrations\Migration;',
             'return new class extends Migration',
             'Schema::create(\'jobs\', function (Blueprint $table) {',
             'Schema::dropIfExists(\'jobs\');',

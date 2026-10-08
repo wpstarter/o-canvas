@@ -10,7 +10,7 @@ use Symfony\Component\Console\Attribute\AsCommand;
  * @see https://github.com/laravel/framework/blob/11.x/src/Illuminate/Database/Console/Migrations/MigrateMakeCommand.php
  */
 #[AsCommand(name: 'make:migration', description: 'Create a new migration file')]
-class MigrateMakeCommand extends \Illuminate\Database\Console\Migrations\MigrateMakeCommand
+class MigrateMakeCommand extends \WpStarter\Database\Console\Migrations\MigrateMakeCommand
 {
     use CreatesUsingGeneratorPreset;
 

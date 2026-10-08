@@ -2,10 +2,10 @@
 
 namespace Orchestra\Canvas;
 
-use Illuminate\Contracts\Foundation\Application;
-use Illuminate\Contracts\Support\DeferrableProvider;
-use Illuminate\Support\Arr;
-use Illuminate\Support\ServiceProvider;
+use WpStarter\Contracts\Foundation\Application;
+use WpStarter\Contracts\Support\DeferrableProvider;
+use WpStarter\Support\Arr;
+use WpStarter\Support\ServiceProvider;
 use Orchestra\Canvas\Core\PresetManager;
 use Symfony\Component\Yaml\Yaml;
 

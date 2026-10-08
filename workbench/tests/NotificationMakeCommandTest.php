@@ -1,6 +1,6 @@
 <?php
 
-namespace Illuminate\Tests\Integration\Generators;
+namespace WpStarter\Tests\Integration\Generators;
 
 class NotificationMakeCommandTest extends TestCase
 {
@@ -17,7 +17,7 @@ class NotificationMakeCommandTest extends TestCase
 
         $this->assertFileContains([
             'namespace App\Notifications;',
-            'use Illuminate\Notifications\Notification;',
+            'use WpStarter\Notifications\Notification;',
             'class FooNotification extends Notification',
             'return (new MailMessage)',
         ], 'app/Notifications/FooNotification.php');

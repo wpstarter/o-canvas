@@ -46,12 +46,12 @@ class ListenerMakeCommandTest extends TestCase
     #[Test]
     public function it_can_generate_listener_for_laravel_event_file()
     {
-        $this->artisan('make:listener', ['name' => 'HelloWorld', '--event' => 'Illuminate\Auth\Events\Login', '--preset' => 'canvas'])
+        $this->artisan('make:listener', ['name' => 'HelloWorld', '--event' => 'WpStarter\Auth\Events\Login', '--preset' => 'canvas'])
             ->assertSuccessful();
 
         $this->assertFileContains([
             'namespace App\Listeners;',
-            'use Illuminate\Auth\Events\Login;',
+            'use WpStarter\Auth\Events\Login;',
             'class HelloWorld',
             'public function handle(Login $event)',
         ], 'app/Listeners/HelloWorld.php');
@@ -65,8 +65,8 @@ class ListenerMakeCommandTest extends TestCase
 
         $this->assertFileContains([
             'namespace App\Listeners;',
-            'use Illuminate\Contracts\Queue\ShouldQueue;',
-            'use Illuminate\Queue\InteractsWithQueue;',
+            'use WpStarter\Contracts\Queue\ShouldQueue;',
+            'use WpStarter\Queue\InteractsWithQueue;',
             'class HelloWorld implements ShouldQueue',
             'public function handle(object $event)',
         ], 'app/Listeners/HelloWorld.php');
@@ -81,8 +81,8 @@ class ListenerMakeCommandTest extends TestCase
         $this->assertFileContains([
             'namespace App\Listeners;',
             'use App\Events\FooCreated;',
-            'use Illuminate\Contracts\Queue\ShouldQueue;',
-            'use Illuminate\Queue\InteractsWithQueue;',
+            'use WpStarter\Contracts\Queue\ShouldQueue;',
+            'use WpStarter\Queue\InteractsWithQueue;',
             'class HelloWorld implements ShouldQueue',
             'public function handle(FooCreated $event)',
         ], 'app/Listeners/HelloWorld.php');
@@ -91,14 +91,14 @@ class ListenerMakeCommandTest extends TestCase
     #[Test]
     public function it_can_generate_queued_listener_with_laravel_event_file()
     {
-        $this->artisan('make:listener', ['name' => 'HelloWorld', '--queued' => true, '--event' => 'Illuminate\Auth\Events\Login', '--preset' => 'canvas'])
+        $this->artisan('make:listener', ['name' => 'HelloWorld', '--queued' => true, '--event' => 'WpStarter\Auth\Events\Login', '--preset' => 'canvas'])
             ->assertSuccessful();
 
         $this->assertFileContains([
             'namespace App\Listeners;',
-            'use Illuminate\Auth\Events\Login;',
-            'use Illuminate\Contracts\Queue\ShouldQueue;',
-            'use Illuminate\Queue\InteractsWithQueue;',
+            'use WpStarter\Auth\Events\Login;',
+            'use WpStarter\Contracts\Queue\ShouldQueue;',
+            'use WpStarter\Queue\InteractsWithQueue;',
             'class HelloWorld implements ShouldQueue',
             'public function handle(Login $event)',
         ], 'app/Listeners/HelloWorld.php');

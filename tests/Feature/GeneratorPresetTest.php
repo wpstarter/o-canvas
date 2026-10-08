@@ -41,7 +41,7 @@ class GeneratorPresetTest extends TestCase
         $this->assertSame('Database\Seeders\\', $preset->seederNamespace());
 
         $this->assertTrue($preset->hasCustomStubPath());
-        $this->assertSame('Illuminate\Foundation\Auth\User', $preset->userProviderModel());
+        $this->assertSame('WpStarter\Foundation\Auth\User', $preset->userProviderModel());
     }
 
     #[Test]
@@ -72,7 +72,7 @@ class GeneratorPresetTest extends TestCase
         $this->assertSame('Database\Seeders\\', $preset->seederNamespace());
 
         $this->assertFalse($preset->hasCustomStubPath());
-        $this->assertSame('Illuminate\Foundation\Auth\User', $preset->userProviderModel());
+        $this->assertSame('WpStarter\Foundation\Auth\User', $preset->userProviderModel());
     }
 
     protected function resolveCanvasPreset($workingPath): Package

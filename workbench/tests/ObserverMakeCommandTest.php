@@ -1,6 +1,6 @@
 <?php
 
-namespace Illuminate\Tests\Integration\Generators;
+namespace WpStarter\Tests\Integration\Generators;
 
 class ObserverMakeCommandTest extends TestCase
 {

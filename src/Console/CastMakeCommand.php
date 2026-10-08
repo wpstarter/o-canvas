@@ -10,7 +10,7 @@ use Symfony\Component\Console\Attribute\AsCommand;
  * @see https://github.com/laravel/framework/blob/11.x/src/Illuminate/Foundation/Console/CastMakeCommand.php
  */
 #[AsCommand(name: 'make:cast', description: 'Create a new custom Eloquent cast class')]
-class CastMakeCommand extends \Illuminate\Foundation\Console\CastMakeCommand
+class CastMakeCommand extends \WpStarter\Foundation\Console\CastMakeCommand
 {
     use CodeGenerator;
     use UsesGeneratorOverrides;
@@ -33,7 +33,7 @@ class CastMakeCommand extends \Illuminate\Foundation\Console\CastMakeCommand
      *
      * @return bool|null
      *
-     * @throws \Illuminate\Contracts\Filesystem\FileNotFoundException
+     * @throws \WpStarter\Contracts\Filesystem\FileNotFoundException
      */
     #[\Override]
     public function handle()

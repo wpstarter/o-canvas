@@ -9,7 +9,7 @@ use Symfony\Component\Console\Attribute\AsCommand;
  * @see https://github.com/laravel/framework/blob/11.x/src/Illuminate/Session/Console/SessionTableCommand.php
  */
 #[AsCommand(name: 'make:session-table', description: 'Create a migration for the session database table', aliases: ['session:table'])]
-class SessionTableCommand extends \Illuminate\Session\Console\SessionTableCommand
+class SessionTableCommand extends \WpStarter\Session\Console\SessionTableCommand
 {
     use MigrationGenerator;
 

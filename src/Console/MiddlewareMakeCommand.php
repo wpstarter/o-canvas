@@ -11,7 +11,7 @@ use Symfony\Component\Console\Attribute\AsCommand;
  * @see https://github.com/laravel/framework/blob/11.x/src/Illuminate/Routing/Console/MiddlewareMakeCommand.php
  */
 #[AsCommand(name: 'make:middleware', description: 'Create a new middleware class')]
-class MiddlewareMakeCommand extends \Illuminate\Routing\Console\MiddlewareMakeCommand
+class MiddlewareMakeCommand extends \WpStarter\Routing\Console\MiddlewareMakeCommand
 {
     use CodeGenerator;
     use TestGenerator;
@@ -35,7 +35,7 @@ class MiddlewareMakeCommand extends \Illuminate\Routing\Console\MiddlewareMakeCo
      *
      * @return bool|null
      *
-     * @throws \Illuminate\Contracts\Filesystem\FileNotFoundException
+     * @throws \WpStarter\Contracts\Filesystem\FileNotFoundException
      */
     #[\Override]
     public function handle()

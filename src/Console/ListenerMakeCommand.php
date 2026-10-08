@@ -11,7 +11,7 @@ use Symfony\Component\Console\Attribute\AsCommand;
  * @see https://github.com/laravel/framework/blob/11.x/src/Illuminate/Foundation/Console/ListenerMakeCommand.php
  */
 #[AsCommand(name: 'make:listener', description: 'Create a new event listener class')]
-class ListenerMakeCommand extends \Illuminate\Foundation\Console\ListenerMakeCommand
+class ListenerMakeCommand extends \WpStarter\Foundation\Console\ListenerMakeCommand
 {
     use CodeGenerator;
     use TestGenerator;
@@ -35,7 +35,7 @@ class ListenerMakeCommand extends \Illuminate\Foundation\Console\ListenerMakeCom
      *
      * @return bool|null
      *
-     * @throws \Illuminate\Contracts\Filesystem\FileNotFoundException
+     * @throws \WpStarter\Contracts\Filesystem\FileNotFoundException
      */
     #[\Override]
     public function handle()

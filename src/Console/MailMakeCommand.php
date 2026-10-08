@@ -11,7 +11,7 @@ use Symfony\Component\Console\Attribute\AsCommand;
  * @see https://github.com/laravel/framework/blob/11.x/src/Illuminate/Foundation/Console/MailMakeCommand.php
  */
 #[AsCommand(name: 'make:mail', description: 'Create a new email class')]
-class MailMakeCommand extends \Illuminate\Foundation\Console\MailMakeCommand
+class MailMakeCommand extends \WpStarter\Foundation\Console\MailMakeCommand
 {
     use CodeGenerator;
     use TestGenerator;
@@ -35,7 +35,7 @@ class MailMakeCommand extends \Illuminate\Foundation\Console\MailMakeCommand
      *
      * @return bool|null
      *
-     * @throws \Illuminate\Contracts\Filesystem\FileNotFoundException
+     * @throws \WpStarter\Contracts\Filesystem\FileNotFoundException
      */
     #[\Override]
     public function handle()

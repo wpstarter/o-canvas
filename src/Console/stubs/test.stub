@@ -2,8 +2,8 @@
 
 namespace {{ namespace }};
 
-use Illuminate\Foundation\Testing\RefreshDatabase;
-use Illuminate\Foundation\Testing\WithFaker;
+use WpStarter\Foundation\Testing\RefreshDatabase;
+use WpStarter\Foundation\Testing\WithFaker;
 use NamespacedDummyTestCase;
 
 class {{ class }} extends DummyTestCase

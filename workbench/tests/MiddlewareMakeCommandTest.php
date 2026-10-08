@@ -1,6 +1,6 @@
 <?php
 
-namespace Illuminate\Tests\Integration\Generators;
+namespace WpStarter\Tests\Integration\Generators;
 
 class MiddlewareMakeCommandTest extends TestCase
 {
@@ -17,7 +17,7 @@ class MiddlewareMakeCommandTest extends TestCase
         $this->assertFileContains([
             'namespace App\Http\Middleware;',
             'use Closure;',
-            'use Illuminate\Http\Request;',
+            'use WpStarter\Http\Request;',
             'class Foo',
             'public function handle(Request $request, Closure $next)',
             'return $next($request);',

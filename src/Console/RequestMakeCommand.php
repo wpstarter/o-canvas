@@ -10,7 +10,7 @@ use Symfony\Component\Console\Attribute\AsCommand;
  * @see https://github.com/laravel/framework/blob/11.x/src/Illuminate/Foundation/Console/RequestMakeCommand.php
  */
 #[AsCommand(name: 'make:request', description: 'Create a new form request class')]
-class RequestMakeCommand extends \Illuminate\Foundation\Console\RequestMakeCommand
+class RequestMakeCommand extends \WpStarter\Foundation\Console\RequestMakeCommand
 {
     use CodeGenerator;
     use UsesGeneratorOverrides;
@@ -33,7 +33,7 @@ class RequestMakeCommand extends \Illuminate\Foundation\Console\RequestMakeComma
      *
      * @return bool|null
      *
-     * @throws \Illuminate\Contracts\Filesystem\FileNotFoundException
+     * @throws \WpStarter\Contracts\Filesystem\FileNotFoundException
      */
     #[\Override]
     public function handle()

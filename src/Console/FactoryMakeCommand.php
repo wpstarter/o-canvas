@@ -13,7 +13,7 @@ use function Orchestra\Sidekick\Filesystem\join_paths;
  * @see https://github.com/laravel/framework/blob/11.x/src/Illuminate/Database/Console/Factories/FactoryMakeCommand.php
  */
 #[AsCommand(name: 'make:factory', description: 'Create a new model factory')]
-class FactoryMakeCommand extends \Illuminate\Database\Console\Factories\FactoryMakeCommand
+class FactoryMakeCommand extends \WpStarter\Database\Console\Factories\FactoryMakeCommand
 {
     use CodeGenerator;
     use ResolvesPresetStubs;
@@ -37,7 +37,7 @@ class FactoryMakeCommand extends \Illuminate\Database\Console\Factories\FactoryM
      *
      * @return bool|null
      *
-     * @throws \Illuminate\Contracts\Filesystem\FileNotFoundException
+     * @throws \WpStarter\Contracts\Filesystem\FileNotFoundException
      */
     #[\Override]
     public function handle()

@@ -20,7 +20,7 @@ class ComponentMakeCommandTest extends TestCase
 
         $this->assertFileContains([
             'namespace App\View\Components;',
-            'use Illuminate\View\Component;',
+            'use WpStarter\View\Component;',
             'class Foo extends Component',
             "return view('components.foo');",
         ], 'app/View/Components/Foo.php');
@@ -36,7 +36,7 @@ class ComponentMakeCommandTest extends TestCase
 
         $this->assertFileContains([
             'namespace App\View\Components;',
-            'use Illuminate\View\Component;',
+            'use WpStarter\View\Component;',
             'class Foo extends Component',
             "return view('components.foo');",
         ], 'app/View/Components/Foo.php');
@@ -52,7 +52,7 @@ class ComponentMakeCommandTest extends TestCase
 
         $this->assertFileContains([
             'namespace App\View\Components;',
-            'use Illuminate\View\Component;',
+            'use WpStarter\View\Component;',
             'class Foo extends Component',
             "return <<<'blade'",
         ], 'app/View/Components/Foo.php');

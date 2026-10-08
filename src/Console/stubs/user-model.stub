@@ -2,11 +2,11 @@
 
 namespace {{ namespace }};
 
-// use Illuminate\Contracts\Auth\MustVerifyEmail;
+// use WpStarter\Contracts\Auth\MustVerifyEmail;
 use Database\Factories\UserFactory;
-use Illuminate\Database\Eloquent\Factories\HasFactory;
-use Illuminate\Foundation\Auth\User as Authenticatable;
-use Illuminate\Notifications\Notifiable;
+use WpStarter\Database\Eloquent\Factories\HasFactory;
+use WpStarter\Foundation\Auth\User as Authenticatable;
+use WpStarter\Notifications\Notifiable;
 
 class User extends Authenticatable
 {

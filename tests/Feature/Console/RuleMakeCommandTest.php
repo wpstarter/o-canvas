@@ -19,7 +19,7 @@ class RuleMakeCommandTest extends TestCase
 
         $this->assertFileContains([
             'namespace App\Rules;',
-            'use Illuminate\Contracts\Validation\ValidationRule;',
+            'use WpStarter\Contracts\Validation\ValidationRule;',
             'class FooBar implements ValidationRule',
         ], 'app/Rules/FooBar.php');
     }
@@ -32,7 +32,7 @@ class RuleMakeCommandTest extends TestCase
 
         $this->assertFileContains([
             'namespace App\Rules;',
-            'use Illuminate\Contracts\Validation\ValidationRule;',
+            'use WpStarter\Contracts\Validation\ValidationRule;',
             'class FooBar implements ValidationRule',
             'public function validate(string $attribute, mixed $value, Closure $fail): void',
         ], 'app/Rules/FooBar.php');
@@ -46,7 +46,7 @@ class RuleMakeCommandTest extends TestCase
 
         $this->assertFileContains([
             'namespace App\Rules;',
-            'use Illuminate\Contracts\Validation\ValidationRule;',
+            'use WpStarter\Contracts\Validation\ValidationRule;',
             'class FooBar implements ValidationRule',
             'public $implicit = true;',
             'public function validate(string $attribute, mixed $value, Closure $fail): void',

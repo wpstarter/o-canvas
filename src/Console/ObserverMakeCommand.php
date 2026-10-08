@@ -10,7 +10,7 @@ use Symfony\Component\Console\Attribute\AsCommand;
  * @see https://github.com/laravel/framework/blob/11.x/src/Illuminate/Foundation/Console/ObserverMakeCommand.php
  */
 #[AsCommand(name: 'make:observer', description: 'Create a new observer class')]
-class ObserverMakeCommand extends \Illuminate\Foundation\Console\ObserverMakeCommand
+class ObserverMakeCommand extends \WpStarter\Foundation\Console\ObserverMakeCommand
 {
     use CodeGenerator;
     use UsesGeneratorOverrides;
@@ -33,7 +33,7 @@ class ObserverMakeCommand extends \Illuminate\Foundation\Console\ObserverMakeCom
      *
      * @return bool|null
      *
-     * @throws \Illuminate\Contracts\Filesystem\FileNotFoundException
+     * @throws \WpStarter\Contracts\Filesystem\FileNotFoundException
      */
     #[\Override]
     public function handle()

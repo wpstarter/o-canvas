@@ -11,7 +11,7 @@ use Symfony\Component\Console\Attribute\AsCommand;
  * @see https://github.com/laravel/framework/blob/11.x/src/Illuminate/Routing/Console/ControllerMakeCommand.php
  */
 #[AsCommand(name: 'make:controller', description: 'Create a new controller class')]
-class ControllerMakeCommand extends \Illuminate\Routing\Console\ControllerMakeCommand
+class ControllerMakeCommand extends \WpStarter\Routing\Console\ControllerMakeCommand
 {
     use CodeGenerator;
     use TestGenerator;
@@ -35,7 +35,7 @@ class ControllerMakeCommand extends \Illuminate\Routing\Console\ControllerMakeCo
      *
      * @return bool|null
      *
-     * @throws \Illuminate\Contracts\Filesystem\FileNotFoundException
+     * @throws \WpStarter\Contracts\Filesystem\FileNotFoundException
      */
     #[\Override]
     public function handle()

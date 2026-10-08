@@ -3,7 +3,7 @@
 namespace {{ namespace }};
 
 use NamespacedDummyTestCase;
-use Illuminate\Foundation\Testing\Concerns\InteractsWithViews;
+use WpStarter\Foundation\Testing\Concerns\InteractsWithViews;
 
 class {{ class }} extends DummyTestCase
 {

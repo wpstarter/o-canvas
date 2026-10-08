@@ -11,7 +11,7 @@ use Symfony\Component\Console\Attribute\AsCommand;
  * @see https://github.com/laravel/framework/blob/11.x/src/Illuminate/Foundation/Console/ChannelMakeCommand.php
  */
 #[AsCommand(name: 'make:channel', description: 'Create a new channel class')]
-class ChannelMakeCommand extends \Illuminate\Foundation\Console\ChannelMakeCommand
+class ChannelMakeCommand extends \WpStarter\Foundation\Console\ChannelMakeCommand
 {
     use CodeGenerator;
     use TestGenerator;
@@ -35,7 +35,7 @@ class ChannelMakeCommand extends \Illuminate\Foundation\Console\ChannelMakeComma
      *
      * @return bool|null
      *
-     * @throws \Illuminate\Contracts\Filesystem\FileNotFoundException
+     * @throws \WpStarter\Contracts\Filesystem\FileNotFoundException
      */
     #[\Override]
     public function handle()

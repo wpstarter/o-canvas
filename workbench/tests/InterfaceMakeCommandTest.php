@@ -2,7 +2,7 @@
 
 namespace Integration\Generators;
 
-use Illuminate\Tests\Integration\Generators\TestCase;
+use WpStarter\Tests\Integration\Generators\TestCase;
 
 class InterfaceMakeCommandTest extends TestCase
 {
@@ -27,7 +27,7 @@ class InterfaceMakeCommandTest extends TestCase
     {
         $interfacesFolderPath = app_path('Contracts');
 
-        /** @var \Illuminate\Filesystem\Filesystem $files */
+        /** @var \WpStarter\Filesystem\Filesystem $files */
         $files = $this->app['files'];
 
         $files->ensureDirectoryExists($interfacesFolderPath);
@@ -47,7 +47,7 @@ class InterfaceMakeCommandTest extends TestCase
     {
         $interfacesFolderPath = app_path('Interfaces');
 
-        /** @var \Illuminate\Filesystem\Filesystem $files */
+        /** @var \WpStarter\Filesystem\Filesystem $files */
         $files = $this->app['files'];
 
         $files->ensureDirectoryExists($interfacesFolderPath);

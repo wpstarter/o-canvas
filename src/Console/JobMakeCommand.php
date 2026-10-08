@@ -11,7 +11,7 @@ use Symfony\Component\Console\Attribute\AsCommand;
  * @see https://github.com/laravel/framework/blob/11.x/src/Illuminate/Foundation/Console/JobMakeCommand.php
  */
 #[AsCommand(name: 'make:job', description: 'Create a new job class')]
-class JobMakeCommand extends \Illuminate\Foundation\Console\JobMakeCommand
+class JobMakeCommand extends \WpStarter\Foundation\Console\JobMakeCommand
 {
     use CodeGenerator;
     use TestGenerator;
@@ -35,7 +35,7 @@ class JobMakeCommand extends \Illuminate\Foundation\Console\JobMakeCommand
      *
      * @return bool|null
      *
-     * @throws \Illuminate\Contracts\Filesystem\FileNotFoundException
+     * @throws \WpStarter\Contracts\Filesystem\FileNotFoundException
      */
     #[\Override]
     public function handle()

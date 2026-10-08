@@ -10,7 +10,7 @@ use Symfony\Component\Console\Attribute\AsCommand;
  * @see https://github.com/laravel/framework/blob/11.x/src/Illuminate/Foundation/Console/InterfaceMakeCommand.php
  */
 #[AsCommand(name: 'make:interface', description: 'Create a new interface')]
-class InterfaceMakeCommand extends \Illuminate\Foundation\Console\InterfaceMakeCommand
+class InterfaceMakeCommand extends \WpStarter\Foundation\Console\InterfaceMakeCommand
 {
     use CodeGenerator;
     use UsesGeneratorOverrides;
@@ -33,7 +33,7 @@ class InterfaceMakeCommand extends \Illuminate\Foundation\Console\InterfaceMakeC
      *
      * @return bool|null
      *
-     * @throws \Illuminate\Contracts\Filesystem\FileNotFoundException
+     * @throws \WpStarter\Contracts\Filesystem\FileNotFoundException
      */
     #[\Override]
     public function handle()

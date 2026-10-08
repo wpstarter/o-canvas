@@ -10,7 +10,7 @@ use Symfony\Component\Console\Attribute\AsCommand;
  * @see https://github.com/laravel/framework/blob/11.x/src/Illuminate/Foundation/Console/ClassMakeCommand.php
  */
 #[AsCommand(name: 'make:class', description: 'Create a new class')]
-class ClassMakeCommand extends \Illuminate\Foundation\Console\ClassMakeCommand
+class ClassMakeCommand extends \WpStarter\Foundation\Console\ClassMakeCommand
 {
     use CodeGenerator;
     use UsesGeneratorOverrides;
@@ -33,7 +33,7 @@ class ClassMakeCommand extends \Illuminate\Foundation\Console\ClassMakeCommand
      *
      * @return bool|null
      *
-     * @throws \Illuminate\Contracts\Filesystem\FileNotFoundException
+     * @throws \WpStarter\Contracts\Filesystem\FileNotFoundException
      */
     #[\Override]
     public function handle()

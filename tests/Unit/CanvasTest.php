@@ -2,7 +2,7 @@
 
 namespace Orchestra\Canvas\Tests\Unit;
 
-use Illuminate\Filesystem\Filesystem;
+use WpStarter\Filesystem\Filesystem;
 use Orchestra\Canvas\Canvas;
 use Orchestra\Canvas\Presets\Laravel;
 use Orchestra\Canvas\Presets\Package;

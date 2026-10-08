@@ -19,7 +19,7 @@ class UserFactoryMakeCommandTest extends TestCase
 
         $this->assertFileContains([
             'namespace Database\Factories;',
-            'use Illuminate\Database\Eloquent\Factories\Factory;',
+            'use WpStarter\Database\Eloquent\Factories\Factory;',
             'use App\Models\User;',
             '@extends Factory<User>',
             'class UserFactory extends Factory',

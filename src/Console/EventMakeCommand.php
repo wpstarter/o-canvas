@@ -10,7 +10,7 @@ use Symfony\Component\Console\Attribute\AsCommand;
  * @see https://github.com/laravel/framework/blob/11.x/src/Illuminate/Foundation/Console/EventMakeCommand.php
  */
 #[AsCommand(name: 'make:event', description: 'Create a new event class')]
-class EventMakeCommand extends \Illuminate\Foundation\Console\EventMakeCommand
+class EventMakeCommand extends \WpStarter\Foundation\Console\EventMakeCommand
 {
     use CodeGenerator;
     use UsesGeneratorOverrides;
@@ -33,7 +33,7 @@ class EventMakeCommand extends \Illuminate\Foundation\Console\EventMakeCommand
      *
      * @return bool|null
      *
-     * @throws \Illuminate\Contracts\Filesystem\FileNotFoundException
+     * @throws \WpStarter\Contracts\Filesystem\FileNotFoundException
      */
     #[\Override]
     public function handle()

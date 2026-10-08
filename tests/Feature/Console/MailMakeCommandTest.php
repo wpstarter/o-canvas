@@ -21,7 +21,7 @@ class MailMakeCommandTest extends TestCase
 
         $this->assertFileContains([
             'namespace App\Mail;',
-            'use Illuminate\Mail\Mailable;',
+            'use WpStarter\Mail\Mailable;',
             'class FooMail extends Mailable',
         ], 'app/Mail/FooMail.php');
 
@@ -37,7 +37,7 @@ class MailMakeCommandTest extends TestCase
 
         $this->assertFileContains([
             'namespace App\Mail;',
-            'use Illuminate\Mail\Mailable;',
+            'use WpStarter\Mail\Mailable;',
             'class FooMail extends Mailable',
             'return new Content(',
             "markdown: 'foo-mail',",

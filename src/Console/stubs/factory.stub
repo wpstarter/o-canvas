@@ -3,7 +3,7 @@
 namespace {{ factoryNamespace }};
 
 use {{ namespacedModel }};
-use Illuminate\Database\Eloquent\Factories\Factory;
+use WpStarter\Database\Eloquent\Factories\Factory;
 use {{ namespacedModel }};
 
 /**

@@ -2,7 +2,7 @@
 
 namespace Orchestra\Canvas\Console;
 
-use Illuminate\Support\Str;
+use WpStarter\Support\Str;
 use Orchestra\Canvas\Core\Commands\GeneratorCommand;
 use Orchestra\Canvas\Core\Concerns\ResolvesPresetStubs;
 use Symfony\Component\Console\Attribute\AsCommand;

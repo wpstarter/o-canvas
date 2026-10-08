@@ -15,7 +15,7 @@ class QueueTableCommandTest extends TestCase
             ->assertSuccessful();
 
         $this->assertMigrationFileContains([
-            'use Illuminate\Database\Migrations\Migration;',
+            'use WpStarter\Database\Migrations\Migration;',
             'return new class extends Migration',
             'Schema::create(\'jobs\', function (Blueprint $table) {',
         ], 'create_jobs_table.php');

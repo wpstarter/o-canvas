@@ -19,7 +19,7 @@ class ChannelMakeCommandTest extends TestCase
 
         $this->assertFileContains([
             'namespace App\Broadcasting;',
-            'use Illuminate\Foundation\Auth\User;',
+            'use WpStarter\Foundation\Auth\User;',
             'class FooChannel',
         ], 'app/Broadcasting/FooChannel.php');
     }

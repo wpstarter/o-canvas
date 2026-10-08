@@ -1,6 +1,6 @@
 <?php
 
-namespace Illuminate\Tests\Integration\Generators;
+namespace WpStarter\Tests\Integration\Generators;
 
 class ProviderMakeCommandTest extends TestCase
 {
@@ -15,7 +15,7 @@ class ProviderMakeCommandTest extends TestCase
 
         $this->assertFileContains([
             'namespace App\Providers;',
-            'use Illuminate\Support\ServiceProvider;',
+            'use WpStarter\Support\ServiceProvider;',
             'class FooServiceProvider extends ServiceProvider',
             'public function register()',
             'public function boot()',

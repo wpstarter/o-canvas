@@ -2,7 +2,7 @@
 
 namespace Orchestra\Canvas\Console;
 
-use Illuminate\Support\Str;
+use WpStarter\Support\Str;
 use Orchestra\Canvas\Core\Concerns\CodeGenerator;
 use Orchestra\Canvas\Core\Concerns\TestGenerator;
 use Orchestra\Canvas\Core\Concerns\UsesGeneratorOverrides;
@@ -12,7 +12,7 @@ use Symfony\Component\Console\Attribute\AsCommand;
  * @see https://github.com/laravel/framework/blob/11.x/src/Illuminate/Foundation/Console/ModelMakeCommand.php
  */
 #[AsCommand(name: 'make:model', description: 'Create a new Eloquent model class')]
-class ModelMakeCommand extends \Illuminate\Foundation\Console\ModelMakeCommand
+class ModelMakeCommand extends \WpStarter\Foundation\Console\ModelMakeCommand
 {
     use CodeGenerator;
     use TestGenerator;
@@ -36,7 +36,7 @@ class ModelMakeCommand extends \Illuminate\Foundation\Console\ModelMakeCommand
      *
      * @return bool|null
      *
-     * @throws \Illuminate\Contracts\Filesystem\FileNotFoundException
+     * @throws \WpStarter\Contracts\Filesystem\FileNotFoundException
      */
     #[\Override]
     public function handle()

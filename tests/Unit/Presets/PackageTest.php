@@ -2,7 +2,7 @@
 
 namespace Orchestra\Canvas\Core\Tests\Unit\Presets;
 
-use Illuminate\Filesystem\Filesystem;
+use WpStarter\Filesystem\Filesystem;
 use Orchestra\Canvas\Presets\Package;
 use PHPUnit\Framework\Attributes\Test;
 use PHPUnit\Framework\TestCase;

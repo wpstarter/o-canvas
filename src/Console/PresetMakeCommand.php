@@ -2,10 +2,10 @@
 
 namespace Orchestra\Canvas\Console;
 
-use Illuminate\Filesystem\Filesystem;
-use Illuminate\Support\Arr;
-use Illuminate\Support\Collection;
-use Illuminate\Support\Str;
+use WpStarter\Filesystem\Filesystem;
+use WpStarter\Support\Arr;
+use WpStarter\Support\Collection;
+use WpStarter\Support\Str;
 use Orchestra\Canvas\Core\Commands\GeneratorCommand;
 use Orchestra\Canvas\Core\Concerns\ResolvesPresetStubs;
 use Symfony\Component\Console\Attribute\AsCommand;

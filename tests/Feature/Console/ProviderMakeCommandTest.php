@@ -21,7 +21,7 @@ class ProviderMakeCommandTest extends TestCase
 
         $this->assertFileContains([
             'namespace App\Providers;',
-            'use Illuminate\Support\ServiceProvider;',
+            'use WpStarter\Support\ServiceProvider;',
             'class FooServiceProvider extends ServiceProvider',
             'public function register()',
             'public function boot()',
@@ -40,7 +40,7 @@ class ProviderMakeCommandTest extends TestCase
 
         $this->assertFileContains([
             'namespace App;',
-            'use Illuminate\Support\ServiceProvider;',
+            'use WpStarter\Support\ServiceProvider;',
             'class FooServiceProvider extends ServiceProvider',
             'public function register()',
             'public function boot()',

@@ -1,6 +1,6 @@
 <?php
 
-namespace Illuminate\Tests\Integration\Generators;
+namespace WpStarter\Tests\Integration\Generators;
 
 class ComponentMakeCommandTest extends TestCase
 {
@@ -21,7 +21,7 @@ class ComponentMakeCommandTest extends TestCase
 
         $this->assertFileContains([
             'namespace App\View\Components;',
-            'use Illuminate\View\Component;',
+            'use WpStarter\View\Component;',
             'class Foo extends Component',
             "return view('components.foo');",
         ], 'app/View/Components/Foo.php');
@@ -37,7 +37,7 @@ class ComponentMakeCommandTest extends TestCase
 
         $this->assertFileContains([
             'namespace App\View\Components;',
-            'use Illuminate\View\Component;',
+            'use WpStarter\View\Component;',
             'class Foo extends Component',
             "return <<<'blade'",
         ], 'app/View/Components/Foo.php');
@@ -62,7 +62,7 @@ class ComponentMakeCommandTest extends TestCase
 
         $this->assertFileContains([
             'namespace App\View\Components;',
-            'use Illuminate\View\Component;',
+            'use WpStarter\View\Component;',
             'class Foo extends Component',
             "return view('custom.path.foo');",
         ], 'app/View/Components/Foo.php');
@@ -78,7 +78,7 @@ class ComponentMakeCommandTest extends TestCase
 
         $this->assertFileContains([
             'namespace App\View\Components\Nested;',
-            'use Illuminate\View\Component;',
+            'use WpStarter\View\Component;',
             'class Foo extends Component',
             "return view('components.nested.foo');",
         ], 'app/View/Components/Nested/Foo.php');
@@ -94,7 +94,7 @@ class ComponentMakeCommandTest extends TestCase
 
         $this->assertFileContains([
             'namespace App\View\Components\Nested;',
-            'use Illuminate\View\Component;',
+            'use WpStarter\View\Component;',
             'class Foo extends Component',
             "return view('custom.path.foo');",
         ], 'app/View/Components/Nested/Foo.php');

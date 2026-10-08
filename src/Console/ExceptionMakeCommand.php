@@ -10,7 +10,7 @@ use Symfony\Component\Console\Attribute\AsCommand;
  * @see https://github.com/laravel/framework/blob/11.x/src/Illuminate/Foundation/Console/ExceptionMakeCommand.php
  */
 #[AsCommand(name: 'make:exception', description: 'Create a new custom exception class')]
-class ExceptionMakeCommand extends \Illuminate\Foundation\Console\ExceptionMakeCommand
+class ExceptionMakeCommand extends \WpStarter\Foundation\Console\ExceptionMakeCommand
 {
     use CodeGenerator;
     use UsesGeneratorOverrides;
@@ -33,7 +33,7 @@ class ExceptionMakeCommand extends \Illuminate\Foundation\Console\ExceptionMakeC
      *
      * @return bool|null
      *
-     * @throws \Illuminate\Contracts\Filesystem\FileNotFoundException
+     * @throws \WpStarter\Contracts\Filesystem\FileNotFoundException
      */
     #[\Override]
     public function handle()

@@ -2,7 +2,7 @@
 
 namespace Orchestra\Canvas\Console;
 
-use Illuminate\Queue\Console\TableCommand;
+use WpStarter\Queue\Console\TableCommand;
 use Orchestra\Canvas\Core\Concerns\MigrationGenerator;
 use Symfony\Component\Console\Attribute\AsCommand;
 

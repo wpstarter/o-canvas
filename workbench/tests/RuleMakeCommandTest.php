@@ -1,6 +1,6 @@
 <?php
 
-namespace Illuminate\Tests\Integration\Generators;
+namespace WpStarter\Tests\Integration\Generators;
 
 class RuleMakeCommandTest extends TestCase
 {
@@ -15,7 +15,7 @@ class RuleMakeCommandTest extends TestCase
 
         $this->assertFileContains([
             'namespace App\Rules;',
-            'use Illuminate\Contracts\Validation\ValidationRule;',
+            'use WpStarter\Contracts\Validation\ValidationRule;',
             'class Foo implements ValidationRule',
         ], 'app/Rules/Foo.php');
     }
@@ -27,7 +27,7 @@ class RuleMakeCommandTest extends TestCase
 
         $this->assertFileContains([
             'namespace App\Rules;',
-            'use Illuminate\Contracts\Validation\ValidationRule;',
+            'use WpStarter\Contracts\Validation\ValidationRule;',
             'class Foo implements ValidationRule',
             'public function validate(string $attribute, mixed $value, Closure $fail): void',
         ], 'app/Rules/Foo.php');
@@ -40,7 +40,7 @@ class RuleMakeCommandTest extends TestCase
 
         $this->assertFileContains([
             'namespace App\Rules;',
-            'use Illuminate\Contracts\Validation\ValidationRule;',
+            'use WpStarter\Contracts\Validation\ValidationRule;',
             'class Foo implements ValidationRule',
             'public $implicit = true;',
             'public function validate(string $attribute, mixed $value, Closure $fail): void',

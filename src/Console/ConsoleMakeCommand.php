@@ -11,7 +11,7 @@ use Symfony\Component\Console\Attribute\AsCommand;
  * @see https://github.com/laravel/framework/blob/11.x/src/Illuminate/Foundation/Console/ConsoleMakeCommand.php
  */
 #[AsCommand(name: 'make:command', description: 'Create a new Artisan command')]
-class ConsoleMakeCommand extends \Illuminate\Foundation\Console\ConsoleMakeCommand
+class ConsoleMakeCommand extends \WpStarter\Foundation\Console\ConsoleMakeCommand
 {
     use CodeGenerator;
     use TestGenerator;
@@ -35,7 +35,7 @@ class ConsoleMakeCommand extends \Illuminate\Foundation\Console\ConsoleMakeComma
      *
      * @return bool|null
      *
-     * @throws \Illuminate\Contracts\Filesystem\FileNotFoundException
+     * @throws \WpStarter\Contracts\Filesystem\FileNotFoundException
      */
     #[\Override]
     public function handle()

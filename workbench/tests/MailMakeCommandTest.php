@@ -1,6 +1,6 @@
 <?php
 
-namespace Illuminate\Tests\Integration\Generators;
+namespace WpStarter\Tests\Integration\Generators;
 
 class MailMakeCommandTest extends TestCase
 {
@@ -18,7 +18,7 @@ class MailMakeCommandTest extends TestCase
 
         $this->assertFileContains([
             'namespace App\Mail;',
-            'use Illuminate\Mail\Mailable;',
+            'use WpStarter\Mail\Mailable;',
             'class FooMail extends Mailable',
         ], 'app/Mail/FooMail.php');
 
@@ -33,7 +33,7 @@ class MailMakeCommandTest extends TestCase
 
         $this->assertFileContains([
             'namespace App\Mail;',
-            'use Illuminate\Mail\Mailable;',
+            'use WpStarter\Mail\Mailable;',
             'class FooMail extends Mailable',
             'return new Content(',
             "markdown: 'foo-mail',",
@@ -61,7 +61,7 @@ class MailMakeCommandTest extends TestCase
 
         $this->assertFileContains([
             'namespace App\Mail;',
-            'use Illuminate\Mail\Mailable;',
+            'use WpStarter\Mail\Mailable;',
             'class FooMail extends Mailable',
             'return new Content(',
             "markdown: 'existing-markdown',",
@@ -80,7 +80,7 @@ class MailMakeCommandTest extends TestCase
 
         $this->assertFileContains([
             'namespace App\Mail;',
-            'use Illuminate\Mail\Mailable;',
+            'use WpStarter\Mail\Mailable;',
             'class FooMail extends Mailable',
             'return new Content(',
             "view: 'foo-mail',",
@@ -103,7 +103,7 @@ class MailMakeCommandTest extends TestCase
 
         $this->assertFileContains([
             'namespace App\Mail;',
-            'use Illuminate\Mail\Mailable;',
+            'use WpStarter\Mail\Mailable;',
             'class FooMail extends Mailable',
             'return new Content(',
             "view: 'existing-template',",

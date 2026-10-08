@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Illuminate\Tests\Integration\Generators;
+namespace WpStarter\Tests\Integration\Generators;
 
 class TraitMakeCommandTest extends TestCase
 {
@@ -21,7 +21,7 @@ class TraitMakeCommandTest extends TestCase
     {
         $traitsFolderPath = app_path('Traits');
 
-        /** @var \Illuminate\Filesystem\Filesystem $files */
+        /** @var \WpStarter\Filesystem\Filesystem $files */
         $files = $this->app['files'];
 
         $files->ensureDirectoryExists($traitsFolderPath);
@@ -41,7 +41,7 @@ class TraitMakeCommandTest extends TestCase
     {
         $traitsFolderPath = app_path('Concerns');
 
-        /** @var \Illuminate\Filesystem\Filesystem $files */
+        /** @var \WpStarter\Filesystem\Filesystem $files */
         $files = $this->app['files'];
 
         $files->ensureDirectoryExists($traitsFolderPath);

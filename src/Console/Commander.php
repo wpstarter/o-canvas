@@ -2,9 +2,9 @@
 
 namespace Orchestra\Canvas\Console;
 
-use Illuminate\Contracts\Console\Kernel as ConsoleKernel;
-use Illuminate\Foundation\Application as LaravelApplication;
-use Illuminate\Support\Collection;
+use WpStarter\Contracts\Console\Kernel as ConsoleKernel;
+use WpStarter\Foundation\Application as LaravelApplication;
+use WpStarter\Support\Collection;
 use Orchestra\Canvas\CanvasServiceProvider;
 use Orchestra\Canvas\Core\Concerns\CreatesUsingGeneratorPreset;
 use Orchestra\Canvas\LaravelServiceProvider;
@@ -37,7 +37,7 @@ class Commander extends \Orchestra\Testbench\Console\Commander
         if (! $this->app instanceof LaravelApplication) {
             $app = parent::laravel();
 
-            /** @var \Illuminate\Contracts\Console\Kernel $kernel */
+            /** @var \WpStarter\Contracts\Console\Kernel $kernel */
             $kernel = $app->make(ConsoleKernel::class);
 
             $app->register(LaravelServiceProvider::class);

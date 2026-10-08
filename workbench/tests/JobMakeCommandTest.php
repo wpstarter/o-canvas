@@ -1,6 +1,6 @@
 <?php
 
-namespace Illuminate\Tests\Integration\Generators;
+namespace WpStarter\Tests\Integration\Generators;
 
 class JobMakeCommandTest extends TestCase
 {
@@ -16,8 +16,8 @@ class JobMakeCommandTest extends TestCase
 
         $this->assertFileContains([
             'namespace App\Jobs;',
-            'use Illuminate\Contracts\Queue\ShouldQueue;',
-            'use Illuminate\Foundation\Queue\Queueable;',
+            'use WpStarter\Contracts\Queue\ShouldQueue;',
+            'use WpStarter\Foundation\Queue\Queueable;',
             'class FooCreated implements ShouldQueue',
             'use Queueable;',
         ], 'app/Jobs/FooCreated.php');
@@ -32,16 +32,16 @@ class JobMakeCommandTest extends TestCase
 
         $this->assertFileContains([
             'namespace App\Jobs;',
-            'use Illuminate\Foundation\Bus\Dispatchable;',
+            'use WpStarter\Foundation\Bus\Dispatchable;',
             'class FooCreated',
             'use Dispatchable;',
         ], 'app/Jobs/FooCreated.php');
 
         $this->assertFileNotContains([
-            'use Illuminate\Contracts\Queue\ShouldQueue;',
-            'use Illuminate\Foundation\Queue\Queueable;',
-            'use Illuminate\Queue\InteractsWithQueue;',
-            'use Illuminate\Queue\SerializesModels;',
+            'use WpStarter\Contracts\Queue\ShouldQueue;',
+            'use WpStarter\Foundation\Queue\Queueable;',
+            'use WpStarter\Queue\InteractsWithQueue;',
+            'use WpStarter\Queue\SerializesModels;',
         ], 'app/Jobs/FooCreated.php');
     }
 

@@ -19,7 +19,7 @@ class SeederMakeCommandTest extends TestCase
 
         $this->assertFileContains([
             'namespace Database\Seeders;',
-            'use Illuminate\Database\Seeder;',
+            'use WpStarter\Database\Seeder;',
             'class FooSeeder extends Seeder',
             'public function run()',
         ], 'database/seeders/FooSeeder.php');

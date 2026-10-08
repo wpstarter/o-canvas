@@ -10,7 +10,7 @@ use Symfony\Component\Console\Attribute\AsCommand;
  * @see https://github.com/laravel/framework/blob/11.x/src/Illuminate/Foundation/Console/ScopeMakeCommand.php
  */
 #[AsCommand(name: 'make:scope', description: 'Create a new class')]
-class ScopeMakeCommand extends \Illuminate\Foundation\Console\ScopeMakeCommand
+class ScopeMakeCommand extends \WpStarter\Foundation\Console\ScopeMakeCommand
 {
     use CodeGenerator;
     use UsesGeneratorOverrides;
@@ -33,7 +33,7 @@ class ScopeMakeCommand extends \Illuminate\Foundation\Console\ScopeMakeCommand
      *
      * @return bool|null
      *
-     * @throws \Illuminate\Contracts\Filesystem\FileNotFoundException
+     * @throws \WpStarter\Contracts\Filesystem\FileNotFoundException
      */
     #[\Override]
     public function handle()

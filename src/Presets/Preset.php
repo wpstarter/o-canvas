@@ -2,7 +2,7 @@
 
 namespace Orchestra\Canvas\Presets;
 
-use Illuminate\Support\Arr;
+use WpStarter\Support\Arr;
 
 use function Orchestra\Sidekick\join_paths;
 

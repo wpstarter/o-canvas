@@ -21,7 +21,7 @@ class FactoryMakeCommandTest extends TestCase
         $this->assertFileContains([
             'namespace Database\Factories;',
             'use App\Foo;',
-            'use Illuminate\Database\Eloquent\Factories\Factory;',
+            'use WpStarter\Database\Eloquent\Factories\Factory;',
             '* @extends Factory<Foo>',
             'class FooFactory extends Factory',
             '* @var class-string<Foo>',
@@ -39,7 +39,7 @@ class FactoryMakeCommandTest extends TestCase
         $this->assertFileContains([
             'namespace Database\Factories;',
             'use App\Models\Foo;',
-            'use Illuminate\Database\Eloquent\Factories\Factory;',
+            'use WpStarter\Database\Eloquent\Factories\Factory;',
             '* @extends Factory<Foo>',
             'class FooFactory extends Factory',
             '* @var class-string<Foo>',
@@ -61,7 +61,7 @@ class FactoryMakeCommandTest extends TestCase
         $this->assertFileContains([
             'namespace Acme\Database\Factory;',
             'use Acme\Foo;',
-            'use Illuminate\Database\Eloquent\Factories\Factory;',
+            'use WpStarter\Database\Eloquent\Factories\Factory;',
             '* @extends Factory<Foo>',
             'class FooFactory extends Factory',
             '* @var class-string<Foo>',
@@ -83,7 +83,7 @@ class FactoryMakeCommandTest extends TestCase
         $this->assertFileContains([
             'namespace Acme\Database\Factory;',
             'use Acme\Models\Foo;',
-            'use Illuminate\Database\Eloquent\Factories\Factory;',
+            'use WpStarter\Database\Eloquent\Factories\Factory;',
             '* @extends Factory<Foo>',
             'class FooFactory extends Factory',
             '* @var class-string<Foo>',

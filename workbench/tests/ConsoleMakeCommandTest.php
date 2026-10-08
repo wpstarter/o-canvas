@@ -1,6 +1,6 @@
 <?php
 
-namespace Illuminate\Tests\Integration\Generators;
+namespace WpStarter\Tests\Integration\Generators;
 
 class ConsoleMakeCommandTest extends TestCase
 {
@@ -15,7 +15,7 @@ class ConsoleMakeCommandTest extends TestCase
 
         $this->assertFileContains([
             'namespace App\Console\Commands;',
-            'use Illuminate\Console\Command;',
+            'use WpStarter\Console\Command;',
             'class FooCommand extends Command',
             'protected $signature = \'app:foo-command\';',
         ], 'app/Console/Commands/FooCommand.php');
@@ -28,7 +28,7 @@ class ConsoleMakeCommandTest extends TestCase
 
         $this->assertFileContains([
             'namespace App\Console\Commands;',
-            'use Illuminate\Console\Command;',
+            'use WpStarter\Console\Command;',
             'class FooCommand extends Command',
             'protected $signature = \'foo:bar\';',
         ], 'app/Console/Commands/FooCommand.php');

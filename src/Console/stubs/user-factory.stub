@@ -2,9 +2,9 @@
 
 namespace {{ factoryNamespace }};
 
-use Illuminate\Database\Eloquent\Factories\Factory;
-use Illuminate\Support\Facades\Hash;
-use Illuminate\Support\Str;
+use WpStarter\Database\Eloquent\Factories\Factory;
+use WpStarter\Support\Facades\Hash;
+use WpStarter\Support\Str;
 use {{ namespacedModel }};
 
 /**

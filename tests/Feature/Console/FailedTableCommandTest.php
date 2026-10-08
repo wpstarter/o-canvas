@@ -15,7 +15,7 @@ class FailedTableCommandTest extends TestCase
             ->assertSuccessful();
 
         $this->assertMigrationFileContains([
-            'use Illuminate\Database\Migrations\Migration;',
+            'use WpStarter\Database\Migrations\Migration;',
             'return new class extends Migration',
             'Schema::create(\'failed_jobs\', function (Blueprint $table) {',
         ], 'create_failed_jobs_table.php');

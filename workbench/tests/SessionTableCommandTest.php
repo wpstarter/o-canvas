@@ -1,8 +1,8 @@
 <?php
 
-namespace Illuminate\Tests\Integration\Generators;
+namespace WpStarter\Tests\Integration\Generators;
 
-use Illuminate\Session\Console\SessionTableCommand;
+use WpStarter\Session\Console\SessionTableCommand;
 
 class SessionTableCommandTest extends TestCase
 {
@@ -11,7 +11,7 @@ class SessionTableCommandTest extends TestCase
         $this->artisan(SessionTableCommand::class)->assertExitCode(0);
 
         $this->assertMigrationFileContains([
-            'use Illuminate\Database\Migrations\Migration;',
+            'use WpStarter\Database\Migrations\Migration;',
             'return new class extends Migration',
             'Schema::create(\'sessions\', function (Blueprint $table) {',
             'Schema::dropIfExists(\'sessions\');',

@@ -1,8 +1,8 @@
 <?php
 
-namespace Illuminate\Tests\Integration\Generators;
+namespace WpStarter\Tests\Integration\Generators;
 
-use Illuminate\Notifications\Console\NotificationTableCommand;
+use WpStarter\Notifications\Console\NotificationTableCommand;
 
 class NotificationTableCommandTest extends TestCase
 {
@@ -11,7 +11,7 @@ class NotificationTableCommandTest extends TestCase
         $this->artisan(NotificationTableCommand::class)->assertExitCode(0);
 
         $this->assertMigrationFileContains([
-            'use Illuminate\Database\Migrations\Migration;',
+            'use WpStarter\Database\Migrations\Migration;',
             'return new class extends Migration',
             'Schema::create(\'notifications\', function (Blueprint $table) {',
             'Schema::dropIfExists(\'notifications\');',

@@ -2,7 +2,7 @@
 
 namespace Integration\Generators;
 
-use Illuminate\Tests\Integration\Generators\TestCase;
+use WpStarter\Tests\Integration\Generators\TestCase;
 
 class EnumMakeCommandTest extends TestCase
 {
@@ -50,7 +50,7 @@ class EnumMakeCommandTest extends TestCase
     {
         $enumsFolderPath = app_path('Enums');
 
-        /** @var \Illuminate\Filesystem\Filesystem $files */
+        /** @var \WpStarter\Filesystem\Filesystem $files */
         $files = $this->app['files'];
 
         $files->ensureDirectoryExists($enumsFolderPath);
@@ -70,7 +70,7 @@ class EnumMakeCommandTest extends TestCase
     {
         $enumerationsFolderPath = app_path('Enumerations');
 
-        /** @var \Illuminate\Filesystem\Filesystem $files */
+        /** @var \WpStarter\Filesystem\Filesystem $files */
         $files = $this->app['files'];
 
         $files->ensureDirectoryExists($enumerationsFolderPath);

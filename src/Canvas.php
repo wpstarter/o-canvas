@@ -2,7 +2,7 @@
 
 namespace Orchestra\Canvas;
 
-use Illuminate\Support\Arr;
+use WpStarter\Support\Arr;
 use InvalidArgumentException;
 
 class Canvas

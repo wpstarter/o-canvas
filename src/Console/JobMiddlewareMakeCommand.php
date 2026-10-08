@@ -11,7 +11,7 @@ use Symfony\Component\Console\Attribute\AsCommand;
  * @see https://github.com/laravel/framework/blob/11.x/src/Illuminate/Foundation/Console/JobMiddlewareMakeCommand.php
  */
 #[AsCommand(name: 'make:job-middleware', description: 'Create a new job middleware class')]
-class JobMiddlewareMakeCommand extends \Illuminate\Foundation\Console\JobMiddlewareMakeCommand
+class JobMiddlewareMakeCommand extends \WpStarter\Foundation\Console\JobMiddlewareMakeCommand
 {
     use CodeGenerator;
     use TestGenerator;
@@ -35,7 +35,7 @@ class JobMiddlewareMakeCommand extends \Illuminate\Foundation\Console\JobMiddlew
      *
      * @return bool|null
      *
-     * @throws \Illuminate\Contracts\Filesystem\FileNotFoundException
+     * @throws \WpStarter\Contracts\Filesystem\FileNotFoundException
      */
     #[\Override]
     public function handle()

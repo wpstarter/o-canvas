@@ -1,8 +1,8 @@
 <?php
 
-namespace Illuminate\Tests\Integration\Generators;
+namespace WpStarter\Tests\Integration\Generators;
 
-use Illuminate\Cache\Console\CacheTableCommand;
+use WpStarter\Cache\Console\CacheTableCommand;
 
 class CacheTableCommandTest extends TestCase
 {
@@ -11,7 +11,7 @@ class CacheTableCommandTest extends TestCase
         $this->artisan(CacheTableCommand::class)->assertExitCode(0);
 
         $this->assertMigrationFileContains([
-            'use Illuminate\Database\Migrations\Migration;',
+            'use WpStarter\Database\Migrations\Migration;',
             'return new class extends Migration',
             'Schema::create(\'cache\', function (Blueprint $table) {',
             'Schema::create(\'cache_locks\', function (Blueprint $table) {',

@@ -43,7 +43,7 @@ class TestMakeCommandTest extends TestCase
 
         $this->assertFileContains([
             'namespace Tests\Feature;',
-            'use Illuminate\Foundation\Testing\RefreshDatabase;',
+            'use WpStarter\Foundation\Testing\RefreshDatabase;',
             'use Tests\FeatureTestCase;',
             'class FooTest extends FeatureTestCase',
         ], 'tests/Feature/FooTest.php');
@@ -61,7 +61,7 @@ class TestMakeCommandTest extends TestCase
 
         $this->assertFileContains([
             'namespace Foo\Tests\Feature;',
-            'use Illuminate\Foundation\Testing\RefreshDatabase;',
+            'use WpStarter\Foundation\Testing\RefreshDatabase;',
             'use Orchestra\Testbench\TestCase;',
             'class FooTest extends TestCase',
         ], 'tests/Feature/FooTest.php');
@@ -96,7 +96,7 @@ class TestMakeCommandTest extends TestCase
 
         $this->assertFileContains([
             'namespace Foo\Tests\Feature;',
-            'use Illuminate\Foundation\Testing\RefreshDatabase;',
+            'use WpStarter\Foundation\Testing\RefreshDatabase;',
             'use Foo\Tests\FeatureTestCase;',
             'class FooTest extends FeatureTestCase',
         ], 'tests/Feature/FooTest.php');

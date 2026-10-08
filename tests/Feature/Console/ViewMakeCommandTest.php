@@ -32,7 +32,7 @@ class ViewMakeCommandTest extends TestCase
 
         $this->assertFileContains([
             'namespace Tests\Feature\View;',
-            'use Illuminate\Foundation\Testing\Concerns\InteractsWithViews;',
+            'use WpStarter\Foundation\Testing\Concerns\InteractsWithViews;',
             'use Tests\TestCase;',
             'class FooTest extends TestCase',
             'use InteractsWithViews;',

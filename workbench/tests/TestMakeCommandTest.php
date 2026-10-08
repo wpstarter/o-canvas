@@ -1,6 +1,6 @@
 <?php
 
-namespace Illuminate\Tests\Integration\Generators;
+namespace WpStarter\Tests\Integration\Generators;
 
 class TestMakeCommandTest extends TestCase
 {
@@ -16,8 +16,8 @@ class TestMakeCommandTest extends TestCase
 
         $this->assertFileContains([
             'namespace Tests\Feature;',
-            'use Illuminate\Foundation\Testing\RefreshDatabase;',
-            'use Illuminate\Foundation\Testing\WithFaker;',
+            'use WpStarter\Foundation\Testing\RefreshDatabase;',
+            'use WpStarter\Foundation\Testing\WithFaker;',
             'use Tests\TestCase;',
             'class FooTest extends TestCase',
         ], 'tests/Feature/FooTest.php');

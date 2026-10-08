@@ -15,7 +15,7 @@ class BatchesTableCommandTest extends TestCase
             ->assertSuccessful();
 
         $this->assertMigrationFileContains([
-            'use Illuminate\Database\Migrations\Migration;',
+            'use WpStarter\Database\Migrations\Migration;',
             'return new class extends Migration',
             'Schema::create(\'job_batches\', function (Blueprint $table) {',
         ], 'create_job_batches_table.php');

@@ -19,8 +19,8 @@ class ResourceMakeCommandTest extends TestCase
 
         $this->assertFileContains([
             'namespace App\Http\Resources;',
-            'use Illuminate\Http\Request;',
-            'use Illuminate\Http\Resources\Json\JsonResource;',
+            'use WpStarter\Http\Request;',
+            'use WpStarter\Http\Resources\Json\JsonResource;',
             'class FooResource extends JsonResource',
             'public function toArray(Request $request)',
         ], 'app/Http/Resources/FooResource.php');
@@ -34,8 +34,8 @@ class ResourceMakeCommandTest extends TestCase
 
         $this->assertFileContains([
             'namespace App\Http\Resources;',
-            'use Illuminate\Http\Request;',
-            'use Illuminate\Http\Resources\Json\ResourceCollection;',
+            'use WpStarter\Http\Request;',
+            'use WpStarter\Http\Resources\Json\ResourceCollection;',
             'class FooResource extends ResourceCollection',
             'public function toArray(Request $request)',
         ], 'app/Http/Resources/FooResource.php');

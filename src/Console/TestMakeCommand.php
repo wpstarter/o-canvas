@@ -13,7 +13,7 @@ use function Orchestra\Sidekick\Filesystem\join_paths;
  * @see https://github.com/laravel/framework/blob/11.x/src/Illuminate/Foundation/Console/TestMakeCommand.php
  */
 #[AsCommand(name: 'make:test', description: 'Create a new test class')]
-class TestMakeCommand extends \Illuminate\Foundation\Console\TestMakeCommand
+class TestMakeCommand extends \WpStarter\Foundation\Console\TestMakeCommand
 {
     use CodeGenerator;
     use UsesGeneratorOverrides;
@@ -36,7 +36,7 @@ class TestMakeCommand extends \Illuminate\Foundation\Console\TestMakeCommand
      *
      * @return bool|null
      *
-     * @throws \Illuminate\Contracts\Filesystem\FileNotFoundException
+     * @throws \WpStarter\Contracts\Filesystem\FileNotFoundException
      */
     #[\Override]
     public function handle()

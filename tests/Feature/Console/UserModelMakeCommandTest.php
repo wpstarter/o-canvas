@@ -19,7 +19,7 @@ class UserModelMakeCommandTest extends TestCase
 
         $this->assertFileContains([
             'namespace App\Models;',
-            'use Illuminate\Foundation\Auth\User as Authenticatable;',
+            'use WpStarter\Foundation\Auth\User as Authenticatable;',
             'class User extends Authenticatable',
             'use HasFactory, Notifiable;',
         ], 'app/Models/User.php');

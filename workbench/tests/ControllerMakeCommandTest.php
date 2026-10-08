@@ -1,6 +1,6 @@
 <?php
 
-namespace Illuminate\Tests\Integration\Generators;
+namespace WpStarter\Tests\Integration\Generators;
 
 class ControllerMakeCommandTest extends TestCase
 {
@@ -19,7 +19,7 @@ class ControllerMakeCommandTest extends TestCase
 
         $this->assertFileContains([
             'namespace App\Http\Controllers;',
-            'use Illuminate\Http\Request;',
+            'use WpStarter\Http\Request;',
             'class FooController',
         ], 'app/Http/Controllers/FooController.php');
 
@@ -41,13 +41,13 @@ class ControllerMakeCommandTest extends TestCase
 
         $this->assertFileContains([
             'namespace App\Http\Controllers;',
-            'use Illuminate\Http\Request;',
+            'use WpStarter\Http\Request;',
             'class Controller',
         ], 'app/Http/Controllers/Controller.php');
 
         $this->assertFileContains([
             'namespace App\Http\Controllers;',
-            'use Illuminate\Http\Request;',
+            'use WpStarter\Http\Request;',
             'class FooController extends Controller',
         ], 'app/Http/Controllers/FooController.php');
 
@@ -61,7 +61,7 @@ class ControllerMakeCommandTest extends TestCase
 
         $this->assertFileContains([
             'namespace App\Http\Controllers;',
-            'use Illuminate\Http\Request;',
+            'use WpStarter\Http\Request;',
             'class FooController',
             'public function __invoke(Request $request)',
         ], 'app/Http/Controllers/FooController.php');
@@ -74,7 +74,7 @@ class ControllerMakeCommandTest extends TestCase
 
         $this->assertFileContains([
             'namespace App\Http\Controllers;',
-            'use Illuminate\Http\Request;',
+            'use WpStarter\Http\Request;',
             'class FooController',
             'public function __invoke(Request $request)',
         ], 'app/Http/Controllers/FooController.php');
@@ -127,7 +127,7 @@ class ControllerMakeCommandTest extends TestCase
 
         $this->assertFileContains([
             'namespace App\Http\Controllers;',
-            'use Illuminate\Http\Request;',
+            'use WpStarter\Http\Request;',
             'class FooController',
             'public function index()',
             'public function store(Request $request)',
@@ -148,7 +148,7 @@ class ControllerMakeCommandTest extends TestCase
 
         $this->assertFileContains([
             'namespace App\Http\Controllers;',
-            'use Illuminate\Http\Request;',
+            'use WpStarter\Http\Request;',
             'class FooController',
             'public function __invoke(Request $request)',
         ], 'app/Http/Controllers/FooController.php');

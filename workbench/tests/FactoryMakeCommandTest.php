@@ -1,6 +1,6 @@
 <?php
 
-namespace Illuminate\Tests\Integration\Generators;
+namespace WpStarter\Tests\Integration\Generators;
 
 class FactoryMakeCommandTest extends TestCase
 {
@@ -15,7 +15,7 @@ class FactoryMakeCommandTest extends TestCase
 
         $this->assertFileContains([
             'namespace Database\Factories;',
-            'use Illuminate\Database\Eloquent\Factories\Factory;',
+            'use WpStarter\Database\Eloquent\Factories\Factory;',
             'class FooFactory extends Factory',
             'public function definition()',
         ], 'database/factories/FooFactory.php');

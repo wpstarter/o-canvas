@@ -1,6 +1,6 @@
 <?php
 
-namespace Illuminate\Tests\Integration\Generators;
+namespace WpStarter\Tests\Integration\Generators;
 
 class ListenerMakeCommandTest extends TestCase
 {
@@ -40,12 +40,12 @@ class ListenerMakeCommandTest extends TestCase
 
     public function testItCanGenerateListenerFileForIlluminateEvent()
     {
-        $this->artisan('make:listener', ['name' => 'FooListener', '--event' => 'Illuminate\Auth\Events\Login'])
+        $this->artisan('make:listener', ['name' => 'FooListener', '--event' => 'WpStarter\Auth\Events\Login'])
             ->assertExitCode(0);
 
         $this->assertFileContains([
             'namespace App\Listeners;',
-            'use Illuminate\Auth\Events\Login;',
+            'use WpStarter\Auth\Events\Login;',
             'class FooListener',
             'public function handle(Login $event)',
         ], 'app/Listeners/FooListener.php');
@@ -58,8 +58,8 @@ class ListenerMakeCommandTest extends TestCase
 
         $this->assertFileContains([
             'namespace App\Listeners;',
-            'use Illuminate\Contracts\Queue\ShouldQueue;',
-            'use Illuminate\Queue\InteractsWithQueue;',
+            'use WpStarter\Contracts\Queue\ShouldQueue;',
+            'use WpStarter\Queue\InteractsWithQueue;',
             'class FooListener implements ShouldQueue',
             'public function handle(object $event)',
         ], 'app/Listeners/FooListener.php');
@@ -73,8 +73,8 @@ class ListenerMakeCommandTest extends TestCase
         $this->assertFileContains([
             'namespace App\Listeners;',
             'use App\Events\FooListenerCreated;',
-            'use Illuminate\Contracts\Queue\ShouldQueue;',
-            'use Illuminate\Queue\InteractsWithQueue;',
+            'use WpStarter\Contracts\Queue\ShouldQueue;',
+            'use WpStarter\Queue\InteractsWithQueue;',
             'class FooListener implements ShouldQueue',
             'public function handle(FooListenerCreated $event)',
         ], 'app/Listeners/FooListener.php');
@@ -82,14 +82,14 @@ class ListenerMakeCommandTest extends TestCase
 
     public function testItCanGenerateQueuedListenerFileForIlluminateEvent()
     {
-        $this->artisan('make:listener', ['name' => 'FooListener', '--queued' => true, '--event' => 'Illuminate\Auth\Events\Login'])
+        $this->artisan('make:listener', ['name' => 'FooListener', '--queued' => true, '--event' => 'WpStarter\Auth\Events\Login'])
             ->assertExitCode(0);
 
         $this->assertFileContains([
             'namespace App\Listeners;',
-            'use Illuminate\Auth\Events\Login;',
-            'use Illuminate\Contracts\Queue\ShouldQueue;',
-            'use Illuminate\Queue\InteractsWithQueue;',
+            'use WpStarter\Auth\Events\Login;',
+            'use WpStarter\Contracts\Queue\ShouldQueue;',
+            'use WpStarter\Queue\InteractsWithQueue;',
             'class FooListener implements ShouldQueue',
             'public function handle(Login $event)',
         ], 'app/Listeners/FooListener.php');
