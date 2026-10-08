@@ -1,18 +1,11 @@
 {
     "$schema": "https://getcomposer.org/schema.json",
-    "name": "orchestra/canvas",
+    "name": "wpstarter/o-canvas",
     "description": "Code Generators for Laravel Applications and Packages",
     "type": "library",
     "license": "MIT",
     "authors": [
-        {
-            "name": "Taylor Otwell",
-            "email": "taylor@laravel.com"
-        },
-        {
-            "name": "Mior Muhammad Zaki",
-            "email": "crynobone@gmail.com"
-        }
+
     ],
     "bin": [
         "canvas"
@@ -44,17 +37,13 @@
         "phpunit/phpunit": "^11.5.18|^12.0"
     },
     "conflict": {
-        "laravel/framework": "<12.40.0|>=13.0.0"
+        "wpstarter/framework": "<2.0|>=3.0"
     },
     "config": {
-        "preferred-install": {
-            "laravel/framework": "source",
-            "*": "auto"
-        },
         "sort-packages": true
     },
     "extra": {
-        "laravel": {
+        "wpstarter": {
             "providers": [
                 "Orchestra\\Canvas\\LaravelServiceProvider"
             ]
