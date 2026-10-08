@@ -44,7 +44,7 @@ class Commander extends \Orchestra\Testbench\Console\Commander
 
             Collection::make($kernel->all())
                 ->reject(
-                    static fn (SymfonyCommand $command, string $name) => \in_array(CreatesUsingGeneratorPreset::class, class_uses_recursive($command))
+                    static fn (SymfonyCommand $command, string $name) => \in_array(CreatesUsingGeneratorPreset::class, ws_class_uses_recursive($command))
                 )->each(static function (SymfonyCommand $command) {
                     $command->setHidden(true);
                 });

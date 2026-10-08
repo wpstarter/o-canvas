@@ -13,7 +13,7 @@ use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Input\InputOption;
 use Symfony\Component\Console\Output\OutputInterface;
 
-use function Laravel\Prompts\select;
+use function WpStarter\Prompts\select;
 use function Orchestra\Sidekick\Filesystem\join_paths;
 use function Orchestra\Testbench\package_path;
 
@@ -55,7 +55,7 @@ class PresetMakeCommand extends GeneratorCommand
             $files = new Filesystem;
             $composer = $files->json(package_path('composer.json'));
 
-            $namespaces = Collection::make(Arr::wrap(data_get($composer, 'autoload.psr-4')))
+            $namespaces = Collection::make(Arr::wrap(ws_data_get($composer, 'autoload.psr-4')))
                 ->keys()
                 ->transform(static fn ($namespace) => rtrim($namespace, '\\'))
                 ->mapWithKeys(static fn ($namespace) => [$namespace => $namespace]);
@@ -112,7 +112,7 @@ class PresetMakeCommand extends GeneratorCommand
     protected function rootNamespace(): string
     {
         /** @var string $namespace */
-        $namespace = transform(
+        $namespace = ws_transform(
             $this->option('namespace'), static fn (string $namespace) => trim($namespace) /** @phpstan-ignore argument.type */
         );
 
